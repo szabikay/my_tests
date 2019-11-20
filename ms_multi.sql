@@ -31,7 +31,7 @@ SELECT offer_number
 		AND pk.offer_start_date = pa.fs_start_date
 
 		WHERE  1=1
-		AND offer_start_date BETWEEN 1180901 AND 1190901
+		AND offer_start_date BETWEEN 1180901 AND 1190101
 		AND wk1_sales_inc_event > 500
 		AND pa = 1
 		) AS abc
