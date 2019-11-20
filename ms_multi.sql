@@ -25,7 +25,7 @@ SELECT offer_number
 		LEFT JOIN (
 					SELECT	DISTINCT item_id, fs_start_date, fs_end_date, fs_number
 					FROM	DXWI_PROD_GPF_pl_PLAY_PEN.vw_PFC_PRDT_FTR_CAPC
-					WHERE fs_number = 64 --PA fs_number is 64
+					WHERE fs_number = 64 --PA fs_number is not always 64
 				) AS pa
 		ON pk.base_product_number_std = pa.item_id
 		AND pk.offer_start_date = pa.fs_start_date
