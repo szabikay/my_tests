@@ -23,3 +23,4 @@ Removed this line from the first dev commit
 
 
 
+We are going to test the rebase command.
